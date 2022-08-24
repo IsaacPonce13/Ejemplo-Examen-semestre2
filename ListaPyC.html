@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/Examenes/Style.css">
+        <title>Clientes y Productos</title>
+    </head>
+    <body class="Fondo">
+        <div class="encabezado">
+            <div class="contenido"> 
+                Listas de Productos y Clientes <br>clase Poo 
+            </div>
+        </div>
+        <!-- Seleccionar Formulario y lista. -->
+        <div id="Menu" class="Menu2">
+            <div>
+                <button onclick="SelectProd()" class="BotonMenu"><img src="https://cdn-icons-png.flaticon.com/512/116/116356.png" alt="Carrito" width="200px"> <p>Productos</p></button>
+                <button onclick="SelectClie()" class="BotonMenu"><img src="https://prints.ultracoloringpages.com/ff748ba4371e977296575b11b72624a7.png" alt="Clientes" width="200px"> <p>Clientes</p></button>
+            </div>
+        </div>
+        <div id="Clientes">
+            <h2>Clientes</h2>
+            <form action="" class="formulario">
+                <label for="nombre" class="Etiquetas">Nombre del cliente:</label><br>
+                <input class="entradas" type="text" id="nombre"><br>
+                <label for="direccion" class="Etiquetas">Direccion:</label><br>
+                <input class="entradas" type="text" id="direccion"><br>
+                <label for="telefono" class="Etiquetas">Telefono:</label><br>
+                <input class="entradas" type="text" id="telefono"><br>
+                <label for="correo" class="Etiquetas">Correo:</label><br>
+                <input class="entradas" type="text" id="correo"><br>
+                <label for="foto" class="Etiquetas">Link a la foto:</label><br>
+                <input class="entradas" type="text" id="foto"><br>
+            </form>
+            <button class="boton" onclick="agregarPersona()" id="agregar">Agregar</button>
+            <button class="boton" onclick="RegresarMenu()" id="RegresarM">Regresar al Menu</button>
+            <button class="boton" onclick="guardarEditado()" id="guardar">Guardar</button>
+            <button class="boton" onclick="cancelarEditar()" id="cancelar">Cancelar</button>
+            <p id="listado"></p>
+        </div>
+
+
+        <div id="Productos">
+            <form action="" class="formulario">
+                <h2>Productos</h2>
+                <label for="nombreP" class="Etiquetas">Nombre del producto:</label><br>
+                <input class="entradas" type="text" id="nombreP"><br>
+                <label for="descripcion" class="Etiquetas">Descripción:</label><br>
+                <input class="entradas" type="text" id="descripcion"><br>
+                <label for="cantidad" class="Etiquetas">Cantidad:</label><br>
+                <input class="entradas" type="text" id="cantidad"><br>
+                <label for="precioC" class="Etiquetas">Precio de costo:</label><br>
+                <input class="entradas" type="text" id="precioC"><br>
+                <label for="precioV" class="Etiquetas">Precio de venta:</label><br>
+                <input class="entradas" type="text" id="precioV"><br>
+                <label for="fotoP" class="Etiquetas">Link a la foto:</label><br>
+                <input class="entradas" type="text" id="fotoP"><br>
+            </form>
+            <button class="boton" onclick="agregarProducto()" id="agregarP">Agregar</button>
+            <button class="boton" onclick="RegresarMenu()" id="RegresarM">Regresar al Menu</button>
+            <button class="boton" onclick="guardarEditadoP()" id="guardarP">Guardar</button>
+            <button class="boton" onclick="cancelarEditarP()" id="cancelarP">Cancelar</button>
+            <p id="listadoP"></p>
+        </div>
+    </body>
+    <script src="/Examenes/JS/MenuPyC.js"></script>
+    <script src="/Examenes/JS/Clientes.js"></script>
+    <script src="/Examenes/JS/Productos.js"></script>
+</html>
