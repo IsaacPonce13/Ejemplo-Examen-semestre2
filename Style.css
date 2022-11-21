@@ -1,8 +1,9 @@
 .Fondo{
-    background-color: rgb(212, 209, 209);
+    /* background-color: #3c4245; */
+    background-image: url(/Examenes/Img/fondo_difuminado_login.jpg);
 }
-.encabezado{
-    background-color: rgb(100, 151, 100);
+/* .encabezado{
+    background-color: #719192;;
     height: 120px;
     border-radius: 10px 10px 10px 10px;
     position: relative;
@@ -10,13 +11,40 @@
     text-align: center;
     /* display: flex;
     justify-content: center; */
+    
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
+
 h2{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+.formulario{
+    
+    min-width: 380px;
+    max-width: 800px;
+    width: 90%;
+    
+    background-color: #5f6769;
+    
+    /*opacity: 0.50;
+    filter: alpha(opacity=50);*/
+    
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    padding: 30px;
+    box-sizing: border-box;
+}
 .contenido{
-    color: aliceblue;
+    color: rgb(181, 208, 232);
     font-family: Arial, Helvetica, sans-serif;
     bottom: 10px;
     left: 10px;
@@ -33,6 +61,33 @@ h2{
 .Menu2{
     display: flex;
     justify-content: center;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+    
+    min-width: 380px;
+    max-width: 900px;
+    width: 90%;
+    
+    background-color: #5f6769;
+    
+    /*opacity: 0.50;
+    filter: alpha(opacity=50);*/
+    
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 .entradas{
@@ -54,6 +109,7 @@ h2{
     margin: 5px;
     font-weight: bold;
 }
+
 
 .tarjeta{
     padding: 5px;
